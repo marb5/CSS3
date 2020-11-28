@@ -268,5 +268,7 @@ p {
     -o-border-radius: 12px;      /* --//-- (opera) */
     border-radius: 12px;
     transform: rotate(14.5deg);
+
+    behavior: url('../PIE.htc');
 }
 
