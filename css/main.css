@@ -261,3 +261,12 @@ textarea {
   }
 }
 
+p {
+    width: 300px;
+    background-color: orange;
+    -webkit-border-radius: 12px; /* it works on older browsers (mainly chrome) */
+    -o-border-radius: 12px;      /* --//-- (opera) */
+    border-radius: 12px;
+    transform: rotate(14.5deg);
+}
+
