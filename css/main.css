@@ -261,7 +261,7 @@ textarea {
   }
 }
 
-p {
+p.index {
     width: 300px;
     background-color: orange;
     -webkit-border-radius: 12px; /* it works on older browsers (mainly chrome) */
@@ -272,3 +272,17 @@ p {
     behavior: url('../PIE.htc');
 }
 
+div > p.selectors { /* p is direct div child */
+    background-color: orange;
+    width: 300px;
+    margin: 5px;
+    padding: 10px;
+}
+
+/*div + p.selectors {*/ /* p is neighbor div child but only first element */
+div ~ p.selectors { /* p is neighbor div child, all of them */
+  background-color: red;
+  width: 300px;
+  margin: 5px;
+  padding: 10px;
+}
