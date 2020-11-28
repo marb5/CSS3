@@ -286,3 +286,35 @@ div ~ p.selectors { /* p is neighbor div child, all of them */
   margin: 5px;
   padding: 10px;
 }
+
+input[required] {
+    border: 1px solid red;
+}
+
+a[href="index.html"] { /* href*="nazwa_strony.pl" - all subpages */
+    color: orange;
+}
+
+input[type="text"] { /* all inputs with type text */
+
+}
+
+[id^="product-"] {
+    color: darkorchid;
+}
+
+[src$=".jpg"]:hover {
+    border: 10px solid green;
+}
+
+[lang|=en] {
+    color: blue;
+}
+
+[data-filetype="tekst"] {
+    color: green;
+}
+
+a[data-info~="internal"] {
+    font-style: italic;
+}

@@ -44,6 +44,27 @@
         </tr>
       </table>
 
+      <table>
+        <caption>Selektory Atrybutów</caption>
+        <tr><th>Selektor</th><th>Wyjaśnienie</th></tr>
+        <tr><td>input[required]</td> <td>wybierz wszystkie elementy o nazwie tagu <b>input</b> które mają atrybut <b>required</b></td></tr>
+        <tr><td>[href="twojastrona.pl"]</td> <td>wybierz wszystkie elementy które mają atrybut <b>href</b> równy <b>twojastrona.pl</b></td></tr>
+        <tr><td>input[type="text"]</td> <td>wybierz wszystkie elementy o nazwie tagu <b>input</b>, a atrybut <b>type</b> równy jest <b>text</b></td></tr>
+        <tr><td>[href*="twojastrona.pl"]</td> <td>wybierz wszystkie elementy które mają atrybut <b>href</b> w której wartości znajduje się gdziekolwiek <b>twojastrona.pl</b> </td></tr>
+        <tr><td>[id^="produkt-"]</td> <td>wybierz wszystkie elementy które mają atrybut <b>id</b> o wartości <b>rozpoczynającej</b> się od <b>produkt-</b></td></tr>
+        <tr><td>a[href^="http://"]</td> <td>wybierz wszystkie elementy o tagu <b>a</b> które mają atrybut <b>href</b> w której wartości znajduje się na początku <b>http://</b> </td></tr>
+        <tr><td>[href$=".jpg"]</td> <td>wybierz wszystkie elementy które mają atrybut <b>href</b> o wartości <b>kończącej</b> się na <b>.jpg</b></td></tr>
+        <tr><td>[lang|=en]</td> <td>wybierz wszystkie elementy które mają atrybut <b>lang</b> o wartości <b>en</b> lub też jest połączony z innym słowem przy pomocy <b>-</b> (myślnika)</td></tr>
+
+        <tr><td>[data-filetype="obrazek"]</td> <td>wybierz wszystkie elementy które mają atrybut <b>data-filetype</b> o wartości równej <b>obrazek</b></td></tr>
+        <tr><td>a[data-info~="external"]</td> <td>wybierz wszystkie elementy, których tag nazywa się <b>a</b> oraz które mają atrybut <b>data-info</b> oraz jedną z wartości data-info jest <b>external</b></td></tr>
+
+
+      </table>
+      <p lang="en"><b>^</b> - rozpoczyna się od...</p>
+      <p><b>*</b> - zawiera w sobie...</p>
+      <p><b>$</b> - kończy się na...</p>
+
       <div>
         <p class="selectors">
           Tekst
@@ -61,13 +82,32 @@
         Tekst
       </p>
 
+      <input type="text">
+      <input type="text" required>
+      <input type="text" required>
+      <input type="text" required>
+
+      <a href="index.html" data-info="html internal index">Strona główna</a>
+      <a href="selectors.html">Selektory</a>
+
+      <div id="product-1">111</div>
+      <div id="product-2">222</div>
+      <div id="product-3">333</div>
+
+      <img src="images/programming.jpg" width="300" height="200">
+
+      <br><br>
+
+      <p lang="en-us">This is text</p>
+      <p lang="pl">To jest tekst</p>
+
+      <p data-filetype="tekst">Akapit</p>
+
       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
       <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
       <script src="js/plugins.js"></script>
       <script src="js/main.js"></script>
       <script src="js/vendor/prefixfree.min.js"></script>
-
-
 
       <!--[if lt IE 9]>
   <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
