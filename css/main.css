@@ -400,3 +400,54 @@ input[type="text"]:focus {
     background: url("../img/download_hover.jpg") no-repeat 0 0;
     background-size: 90%;
 }
+
+table tr td:first-child {
+    font-weight: bold;
+    width: 256px;
+}
+
+.example span:only-child {
+    color: green;
+}
+
+.example p:empty {
+    border: 1px solid black;
+    width: 110px;
+    height: 4px;
+}
+
+#testing_selector p:not(.without_style) {
+    color: green;
+}
+
+#testing_selector2 p::first-letter {
+    font-size: 2em;
+    font-weight: bold;
+    font-family: cursive;
+    padding-right: 2px;
+    color: green;
+}
+
+#testing_selector3 p::first-line {
+    font-size: 1em;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+input:disabled {
+    color: #CCCCCC;
+    background-color: #EEEEEE;
+}
+
+#showMeFun {
+    display: none;
+}
+
+#showMeFun:target {
+    display: block;
+    width: 200px;
+    background-color: gray;
+    opacity: 0.9;
+    padding: 10px;
+    border-radius: 10px;
+}
