@@ -17,6 +17,10 @@ html {
   line-height: 1.4;
 }
 
+body {
+    background-image: url('../img/background.png');
+}
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -487,4 +491,18 @@ div.box_shadow {
     width: 200px;
     height: 200px;
     box-shadow: 7px 7px 5px 2px rgba(50, 50, 50, 0.75);
+}
+
+div.transparent_background {
+    margin: 50px;
+    background-color: rgba(200, 200, 200, 0.5);
+    width: 400px;
+    height: 400px;
+    padding: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    /*
+    -pie-background: rgba(200, 200, 200, 0.5);
+    behavior: url("PIE.htc");
+                                                            for older IE */
 }
