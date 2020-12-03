@@ -476,3 +476,15 @@ p.uppercase {
 p.lowercase {
     text-transform: lowercase;
 }
+
+p.text_shadow {
+    text-shadow: 4px 4px 5px rgba(150, 150, 150, 1);
+}
+
+div.box_shadow {
+    color: white;
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    box-shadow: 7px 7px 5px 2px rgba(50, 50, 50, 0.75);
+}
