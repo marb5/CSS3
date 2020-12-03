@@ -291,10 +291,6 @@ input[required] {
     border: 1px solid red;
 }
 
-a[href="index.html"] { /* href*="nazwa_strony.pl" - all subpages */
-    color: orange;
-}
-
 input[type="text"] { /* all inputs with type text */
 
 }
@@ -315,6 +311,51 @@ input[type="text"] { /* all inputs with type text */
     color: green;
 }
 
+a, a:visited{
+    color: blue;
+    text-decoration: none;
+}
+
+  a[href="index.html"] { /* href*="nazwa_strony.pl" - all subpages */
+    color: orange;
+  }
+
 a[data-info~="internal"] {
     font-style: italic;
+}
+
+table tr:hover {
+    background-color: rgba(200,200,200, 0.7);
+}
+
+.example {
+    display: none;
+}
+
+table tr:hover .example {
+    display: block;
+}
+
+label {
+    padding: 4px;
+}
+
+input[type='radio']:checked + label {
+    font-weight: bold;
+}
+
+input[type="text"] {
+    border: solid 1px #CCCCCC;
+    border-radius: 4px;
+    padding: 4px;
+    color: #666666;
+    margin: 10px;
+}
+
+input[type="text"]:focus {
+    border-width: 2px;
+    border-color: lightgreen;
+    padding: 4px;
+    outline: 0;
+    color: #111111;
 }
