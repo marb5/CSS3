@@ -500,9 +500,11 @@ div.transparent_background {
     height: 400px;
     padding: 15px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-    /*
+    border-radius: 0px 20px;
+    
     -pie-background: rgba(200, 200, 200, 0.5);
     behavior: url("PIE.htc");
-                                                            for older IE */
+                                                           /* for older IE */
 }
+
+
