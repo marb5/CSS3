@@ -311,14 +311,14 @@ input[type="text"] { /* all inputs with type text */
     color: green;
 }
 
-a, a:visited{
+a, a:visited {
     color: blue;
     text-decoration: none;
 }
 
-  a[href="index.html"] { /* href*="nazwa_strony.pl" - all subpages */
+a[href="index.html"] { /* href*="nazwa_strony.pl" - all subpages */
     color: orange;
-  }
+}
 
 a[data-info~="internal"] {
     font-style: italic;
@@ -358,4 +358,30 @@ input[type="text"]:focus {
     padding: 4px;
     outline: 0;
     color: #111111;
+}
+
+[data-tooltip] {
+    cursor: help;
+    position: relative;
+    font-weight: bold;
+}
+
+[data-tooltip]:hover { /* IE10 fix, it doesn't work without it */
+
+}
+
+[data-tooltip]:hover:after {
+    content: attr(data-tooltip); /*attr - attribute*/
+    min-width: 90px;
+    background-color: gray;
+    opacity: 0.9;
+    padding: 12px;
+    border-radius: 12px;
+    position: absolute;
+    top: 0px;
+    left: 40px;
+    font-size: 12px;
+    font-weight: bold;
+    z-index: 10;
+    color: white;
 }
