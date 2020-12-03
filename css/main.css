@@ -464,3 +464,15 @@ p.nerko_one {
 p.kaushan {
     font-family: KaushanScript-Regular;
 }
+
+p.capitalize {
+    text-transform: capitalize;
+}
+
+p.uppercase {
+    text-transform: uppercase;
+}
+
+p.lowercase {
+    text-transform: lowercase;
+}
