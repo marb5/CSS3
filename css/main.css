@@ -451,3 +451,16 @@ input:disabled {
     padding: 10px;
     border-radius: 10px;
 }
+
+@font-face {
+    font-family: 'KaushanScript-Regular';
+    src: url('../web_fonts/KaushanScript-Regular.otf');
+}
+
+p.nerko_one {
+    font-family: 'Nerko One', cursive;
+}
+
+p.kaushan {
+    font-family: KaushanScript-Regular;
+}
