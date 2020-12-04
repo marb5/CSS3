@@ -512,14 +512,14 @@ div.transparent_background {
                                                            /* for older IE */
 }
 
-div.panel {
+.panel {
   margin: 50px;
   background-color: rgba(200, 200, 200, 1);
   width: 60px;
   padding: 15px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border-radius: 20px;
-  transition: color 0.5s cubic-bezier(.17,.67,.83,.67) 0.1s;
+  transition: all 0.5s cubic-bezier(.17,.67,.83,.67) 0.1s;
   -pie-background: rgba(200, 200, 200, 1);
   behavior: url("PIE.htc");
   /* for older IE */
@@ -529,6 +529,13 @@ div.panel {
   cursor: pointer;
   color: white;
   opacity: 0.5;
+}
+
+.panel_clicked {
+  /* transform: scale(0.7); */
+  transform: rotate(180deg);
+  /* transform: translate(10px, 5px); */
+  /* transform: skew(10deg, 5deg); */
 }
 
 .box {
