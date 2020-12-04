@@ -512,4 +512,38 @@ div.transparent_background {
                                                            /* for older IE */
 }
 
+div.panel {
+  margin: 50px;
+  background-color: rgba(200, 200, 200, 1);
+  width: 60px;
+  padding: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 20px;
+  transition: color 0.5s cubic-bezier(.17,.67,.83,.67) 0.1s;
+  -pie-background: rgba(200, 200, 200, 1);
+  behavior: url("PIE.htc");
+  /* for older IE */
+}
 
+.panel:hover {
+  cursor: pointer;
+  color: white;
+  opacity: 0.5;
+}
+
+.box {
+    background-color: blue;
+    width: 50px;
+    height: 50px;
+    transition: 1s;
+}
+
+#box_content {
+    background-color: aqua;
+    width: 300px;
+    height: 50px;
+}
+
+#box_content:hover .box {
+    margin-left: 250px;
+}
