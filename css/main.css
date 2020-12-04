@@ -538,6 +538,56 @@ div.transparent_background {
   /* transform: skew(10deg, 5deg); */
 }
 
+.panel2 {
+    margin: 50px;
+    background-color: rgba(200, 200, 200, 1);
+    width: 60px;
+    padding: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 20px;
+    animation: rotation2 2s infinite alternate;
+    -pie-background: rgba(200, 200, 200, 1);
+    behavior: url("PIE.htc");
+    /* for older IE */
+}
+
+.panel2:hover {
+    cursor: pointer;
+    color: white;
+    opacity: 0.5;
+}
+
+.stopAnimation {
+    animation-play-state: paused;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotation2 {
+    0% {
+
+    }
+    30% {
+        transform: rotate(180deg);
+    }
+    50% {
+        transform: rotate(180deg);
+        transform: scale(0.8);
+    }
+    100% {
+        transform: rotate(360deg);
+        transform: scale(0.8);
+        opacity: 0.4;
+    }
+}
+
 .box {
     background-color: blue;
     width: 50px;
