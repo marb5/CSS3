@@ -2,8 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\css",
+    "\\js",
+    "\\js\\vendor",
     "\\web_fonts"
   ],
-  "SelectedNode": "\\PIE.htc",
+  "SelectedNode": "\\js\\main.js",
   "PreviewInSolutionExplorer": false
 }
