@@ -649,7 +649,6 @@ div.transparent_background {
 #stage2 {
     width: 200px;
     height: 200px;
-    border: 1px solid black;
     margin: 50px;
     perspective: 1000px;
     position: relative;
@@ -717,4 +716,20 @@ div.transparent_background {
     100% {
         transform: rotateY(720deg) rotateX(720deg);
     }
+}
+
+#background_example {
+    border: 5px dotted gray;
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+    margin-top: 100px;
+    color: white;
+    background: no-repeat bottom url("../img/programming.jpg"), no-repeat top url("../img/programming.jpg"), red;
+    background-origin: content-box;
+    /* background-clip: content-box; */
+    background-size: contain;
+    /* background-size: 200px; */
+    /* background-size: 20% auto; */
 }
