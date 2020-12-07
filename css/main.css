@@ -733,3 +733,10 @@ div.transparent_background {
     /* background-size: 200px; */
     /* background-size: 20% auto; */
 }
+
+#column_text {
+    margin: 50px;
+    column-count: 2;
+    column-gap: 50px;
+    column-rule: 3px solid gray;
+}
